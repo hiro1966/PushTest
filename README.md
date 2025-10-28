@@ -1,6 +1,12 @@
 # Push通知システム - iPhone App & Google Cloud API
 
-このプロジェクトは、iPhoneアプリとGoogle Cloud Functions（Firebase連携）を使用したプッシュ通知システムです。
+このプロジェクトは、iPhoneアプリとGoogle Cloud Functions（Firebase連携）を使用した、フルスタックのプッシュ通知システムです。
+
+## 🚀 クイックスタート
+
+5分で始めたい方は **[QUICKSTART.md](./QUICKSTART.md)** をご覧ください！
+
+詳細なセットアップは **[docs/SETUP.md](./docs/SETUP.md)** を参照してください。
 
 ## 📁 プロジェクト構成
 
@@ -38,17 +44,16 @@
 - **iOS App**: SwiftUI, iOS 15.0+
 - **言語**: TypeScript (Backend), Swift (iOS)
 
-## 📖 セットアップ手順
+## 📖 ドキュメント
 
-詳細は各ディレクトリのREADMEを参照してください：
-
-1. [Google Cloud API Setup](./google-cloud-api/README.md)
-2. [iOS App Setup](./ios-app/README.md)
-3. [詳細セットアップガイド](./docs/SETUP.md)
-
-## 📝 API仕様
-
-詳細は [API仕様書](./docs/API.md) を参照してください。
+| ドキュメント | 説明 |
+|------------|------|
+| [QUICKSTART.md](./QUICKSTART.md) | 5分で動かすクイックガイド ⚡ |
+| [docs/SETUP.md](./docs/SETUP.md) | 詳細なセットアップ手順 📖 |
+| [docs/API.md](./docs/API.md) | API仕様書（エンドポイント詳細） 📡 |
+| [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md) | プロジェクト全体のサマリー 📋 |
+| [google-cloud-api/README.md](./google-cloud-api/README.md) | Cloud Functions詳細 ☁️ |
+| [ios-app/README.md](./ios-app/README.md) | iOSアプリ詳細 📱 |
 
 ## ⚠️ 注意事項
 
