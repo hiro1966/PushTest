@@ -1,0 +1,29 @@
+{
+  "name": "push-notification-api",
+  "version": "1.0.0",
+  "description": "Google Cloud Functions for Push Notification System",
+  "main": "functions/index.js",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "npm run build && gcloud functions deploy",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.5.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.20",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.2",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}

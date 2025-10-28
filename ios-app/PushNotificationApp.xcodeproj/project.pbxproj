@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA0001 /* PushNotificationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0002 /* PushNotificationAppApp.swift */; };
+		BA0003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0004 /* ContentView.swift */; };
+		BA0005 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0006 /* User.swift */; };
+		BA0007 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0008 /* Message.swift */; };
+		BA0009 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0010 /* APIService.swift */; };
+		BA0011 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0012 /* NotificationManager.swift */; };
+		BA0013 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0014 /* RegistrationViewModel.swift */; };
+		BA0015 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0016 /* MessageViewModel.swift */; };
+		BA0017 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0018 /* HomeView.swift */; };
+		BA0019 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0020 /* RegistrationView.swift */; };
+		BA0021 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0022 /* MessageListView.swift */; };
+		BA0023 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0024 /* SettingsView.swift */; };
+		BA0025 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = BA0026 /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA0002 /* PushNotificationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationAppApp.swift; sourceTree = "<group>"; };
+		BA0004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ContentView.swift; sourceTree = "<group>"; };
+		BA0006 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		BA0008 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Message.swift; sourceTree = "<group>"; };
+		BA0010 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/APIService.swift; sourceTree = "<group>"; };
+		BA0012 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/NotificationManager.swift; sourceTree = "<group>"; };
+		BA0014 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/RegistrationViewModel.swift; sourceTree = "<group>"; };
+		BA0016 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/MessageViewModel.swift; sourceTree = "<group>"; };
+		BA0018 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/HomeView.swift; sourceTree = "<group>"; };
+		BA0020 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/RegistrationView.swift; sourceTree = "<group>"; };
+		BA0022 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/MessageListView.swift; sourceTree = "<group>"; };
+		BA0024 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SettingsView.swift; sourceTree = "<group>"; };
+		BA0030 /* PushNotificationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotificationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0032 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA0027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0025 /* FirebaseMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA0028 = {
+			isa = PBXGroup;
+			children = (
+				BA0029 /* PushNotificationApp */,
+				BA0033 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA0029 /* PushNotificationApp */ = {
+			isa = PBXGroup;
+			children = (
+				BA0002 /* PushNotificationAppApp.swift */,
+				BA0034 /* Views */,
+				BA0035 /* ViewModels */,
+				BA0036 /* Models */,
+				BA0037 /* Services */,
+				BA0031 /* Info.plist */,
+				BA0032 /* GoogleService-Info.plist */,
+			);
+			path = PushNotificationApp;
+			sourceTree = "<group>";
+		};
+		BA0033 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA0030 /* PushNotificationApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA0034 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA0004 /* ContentView.swift */,
+				BA0018 /* HomeView.swift */,
+				BA0020 /* RegistrationView.swift */,
+				BA0022 /* MessageListView.swift */,
+				BA0024 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA0035 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BA0014 /* RegistrationViewModel.swift */,
+				BA0016 /* MessageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BA0036 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA0006 /* User.swift */,
+				BA0008 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA0037 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BA0010 /* APIService.swift */,
+				BA0012 /* NotificationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA0038 /* PushNotificationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA0039 /* Build configuration list for PBXNativeTarget "PushNotificationApp" */;
+			buildPhases = (
+				BA0040 /* Sources */,
+				BA0027 /* Frameworks */,
+				BA0041 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushNotificationApp;
+			packageProductDependencies = (
+				BA0026 /* FirebaseMessaging */,
+			);
+			productName = PushNotificationApp;
+			productReference = BA0030 /* PushNotificationApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA0042 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = BA0043 /* Build configuration list for PBXProject "PushNotificationApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA0028;
+			packageReferences = (
+				BA0044 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = BA0033 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA0038 /* PushNotificationApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA0041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA0040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0001 /* PushNotificationAppApp.swift in Sources */,
+				BA0003 /* ContentView.swift in Sources */,
+				BA0005 /* User.swift in Sources */,
+				BA0007 /* Message.swift in Sources */,
+				BA0009 /* APIService.swift in Sources */,
+				BA0011 /* NotificationManager.swift in Sources */,
+				BA0013 /* RegistrationViewModel.swift in Sources */,
+				BA0015 /* MessageViewModel.swift in Sources */,
+				BA0017 /* HomeView.swift in Sources */,
+				BA0019 /* RegistrationView.swift in Sources */,
+				BA0021 /* MessageListView.swift in Sources */,
+				BA0023 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BA0045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PushNotificationApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PushNotificationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA0046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PushNotificationApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PushNotificationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA0039 /* Build configuration list for PBXNativeTarget "PushNotificationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0045 /* Debug */,
+				BA0046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA0043 /* Build configuration list for PBXProject "PushNotificationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0045 /* Debug */,
+				BA0046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA0044 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA0026 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA0044 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BA0042 /* Project object */;
+}
