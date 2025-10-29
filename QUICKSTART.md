@@ -39,6 +39,25 @@
 
 ## 🚀 STEP 2: Cloud Functionsをデプロイ（2分）
 
+### ⚠️ 重要: Blazeプランへのアップグレードが必要
+
+Cloud Functionsを使用するには、Firebaseプロジェクトを**Blazeプラン（従量課金）**にアップグレードする必要があります。
+
+#### 💰 Blazeプランについて
+- **無料枠が含まれています**（月間200万回の呼び出し）
+- 小規模な使用であれば**実質無料**で利用可能
+- クレジットカード登録が必要ですが、無料枠を超えない限り課金されません
+
+#### アップグレード手順
+1. https://console.firebase.google.com/project/YOUR_PROJECT_ID/usage/details にアクセス
+2. 「Blazeプランにアップグレード」をクリック
+3. 支払い情報を入力
+4. アップグレード完了
+
+---
+
+### デプロイ手順
+
 ```bash
 # 1. プロジェクトに移動
 cd webapp/google-cloud-api
@@ -64,6 +83,17 @@ firebase deploy --only functions
 ```
 https://us-central1-YOUR_PROJECT_ID.cloudfunctions.net
 ```
+
+### 💡 アップグレードしたくない場合
+
+ローカルエミュレータでテストできます：
+```bash
+cd google-cloud-api
+npm run serve
+# → http://localhost:5001 でテスト可能
+```
+
+ただし、**実際のプッシュ通知は送信できません**。
 
 ---
 
