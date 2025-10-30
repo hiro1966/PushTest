@@ -1,0 +1,15 @@
+{
+  "name": "push-notification-api",
+  "version": "1.0.0",
+  "description": "Google Cloud Functions for Push Notification System",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0",
+    "firebase-functions": "^6.0.0",
+    "express": "^4.18.2"
+  },
+  "private": true
+}

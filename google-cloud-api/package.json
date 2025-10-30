@@ -2,10 +2,10 @@
   "name": "push-notification-api",
   "version": "1.0.0",
   "description": "Google Cloud Functions for Push Notification System",
-  "main": "functions/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "deploy": "npm run build && gcloud functions deploy",
+    "deploy": "npm run build && firebase deploy --only functions",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",

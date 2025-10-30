@@ -1,9 +1,12 @@
 {
   "functions": {
-    "source": ".",
-    "predeploy": [
-      "npm run build"
-    ],
-    "runtime": "nodejs20"
+    "source": "lib",
+    "runtime": "nodejs20",
+    "ignore": [
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "*.local"
+    ]
   }
 }
